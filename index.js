@@ -7,7 +7,6 @@ const process = require('process')
 const PROGRAM_FILES_X86 = process.env['ProgramFiles(x86)']
 const PROGRAM_FILES = [process.env['ProgramFiles(x86)'], process.env['ProgramFiles']]
 
-
 const EDITIONS = ['Enterprise', 'Professional', 'Community']
 const YEARS = ['2022', '2019', '2017']
 
@@ -239,5 +238,5 @@ try {
     main()
 }
 catch (e) {
-    core.setFailed('Could not setup Developer Command Prompt: ' + e.message)
+    core.setFailed('Could not set up Developer Command Prompt: ' + e.message)
 }
