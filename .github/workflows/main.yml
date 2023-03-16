@@ -1,13 +1,6 @@
 name: msvc-dev-cmd
 
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-      - release/*
-  schedule:
-    - cron: '0 6 * * *'
+on: push
 
 jobs:
   test:
